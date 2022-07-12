@@ -1,0 +1,42 @@
+//nesting- anidacion
+/*.botonera{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: $mainColor;
+   padding: 4px 30px;
+   img{
+       width: 200px;
+       @media (min-width: 280px) and (max-width: 300px){
+         width: 150px;
+       }
+    }
+    ul{display: flex;
+       li{
+         list-style: none ;
+         margin-right: 10px;
+         a{
+            color: $keyColor;
+            font-family: $secondaryFont;
+            font-size: $textMd;
+            &:hover{ color: $black;
+                     text-decoration:underline;}
+         }
+       }
+   }
+}*/
+//nesting- anidacion
+
+nav {
+   background-image: linear-gradient(
+     to bottom right,
+     rgb(66, 10, 221),
+     rgb(175, 194, 247)
+   );
+   img{
+      height: 150px;
+      margin: 5px;
+   }
+ }
+
+

@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap");
+/*.botonera{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: $mainColor;
+   padding: 4px 30px;
+   img{
+       width: 200px;
+       @media (min-width: 280px) and (max-width: 300px){
+         width: 150px;
+       }
+    }
+    ul{display: flex;
+       li{
+         list-style: none ;
+         margin-right: 10px;
+         a{
+            color: $keyColor;
+            font-family: $secondaryFont;
+            font-size: $textMd;
+            &:hover{ color: $black;
+                     text-decoration:underline;}
+         }
+       }
+   }
+}*/
+nav {
+  background-image: linear-gradient(to bottom right, #420add, #afc2f7); }
+  nav img {
+    height: 150px;
+    margin: 5px; }
+
+footer {
+  background-image: linear-gradient(to bottom right, #420add, #afc2f7); }
+  footer img {
+    width: 5%;
+    display: flexbox; }
+
+article {
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Roboto", sans-serif;
+  font-size: 1em; }
+
+.foto1 {
+  width: 400px;
+  height: 390px; }
+
+.foto1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+.foto2 {
+  width: 400px;
+  height: 390px; }
+
+.foto2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+  .foto2 img:hover {
+    transform: translate(20px, -15px);
+    cursor: pointer;
+    transition: transform 3s; }
+
+.section1 {
+  display: flex; }
+
+.barralateral {
+  width: auto;
+  text-align: left;
+  display: flexbox;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  padding: 5px; }
+
+aside blockquote {
+  padding: 15px 1px; }
+
+#tabla {
+  height: 100px;
+  margin: 50px 50px; }
+
+.section2 {
+  display: flex; }
+
+h2 {
+  font-size: 30px;
+  margin: 10px 15px; }
+
+.detalles {
+  font-size: 20px;
+  font-family: fantasy;
+  margin: 20px auto;
+  width: 50%; }
+
+#quince {
+  width: 800px;
+  height: 590px; }
+
+#boda {
+  width: 800px;
+  height: 590px; }
+
+#bautismo {
+  width: 800px;
+  height: 590px; }
+
+#colegio {
+  width: 800px;
+  height: 590px; }
+
+.fotoqquince img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+.fotoboda img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+.fotobautismo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+.fotocolegio img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+/* X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
+.roche-fotografia-grid {
+  width: 99%;
+  display: grid;
+  background-color: #fdfdfd;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "medio" "barra" "quince" "boda" "bau" "pibe" "pie"; }
+
+#nav {
+  grid-area: nav;
+  top: 0;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+#barra {
+  grid-area: barra; }
+
+#tabla {
+  grid-area: medio; }
+
+#quince {
+  grid-area: quince; }
+
+#pie {
+  grid-area: pie; }
+
+#boda {
+  grid-area: boda; }
+
+#bautismo {
+  grid-area: bau; }
+
+#colegio {
+  grid-area: pibe; }
+
+/*/ Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .roche-fotografia-grid {
+    width: 99%;
+    display: grid;
+    background-color: #fdfdfd;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "medio" "barra" "quince" "boda" "bau" "pibe" "pie"; }
+  #nav {
+    grid-area: nav;
+    top: 0;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #barra {
+    grid-area: barra; }
+  #tabla {
+    grid-area: medio; }
+  #quince {
+    grid-area: quince; }
+  #pie {
+    grid-area: pie; }
+  #boda {
+    grid-area: boda; }
+  #bautismo {
+    grid-area: bau; }
+  #colegio {
+    grid-area: pibe; } }
+
+/*/ Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .roche-fotografia-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav" "barra medio" "quince boda" "bau pibe" "pie pie"; }
+  #nav {
+    grid-area: nav;
+    top: 0; } }
+
+/*/ Large devices (desktops, 992px and up)*/
+/*/ X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .roche-fotografia-grid {
+    background-color: #fafafd;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "nav nav nav" "barra medio medio" "barra quince boda" "pibe pibe pibe" "bau bau bau" "pie pie pie"; }
+  #nav {
+    flex-direction: row; } }
+
+/*/ XX-Large devices (larger desktops, 1400px and up)*/
